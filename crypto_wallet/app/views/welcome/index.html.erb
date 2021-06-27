@@ -1,0 +1,14 @@
+<h1>Seja Bem-Vindo!</h1>
+
+<p> <%= app_name %> </p>
+
+<p>Data: <%= br_date(Date.today) %> </p>
+
+<ul>
+  <li>
+  <a href="/coins"> Cadastrar Moedas </a>
+  </li>
+  <li>
+  <%= link_to "cadastro de moedas", coins_path %>
+  </li>
+</ul>
