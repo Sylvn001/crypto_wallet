@@ -14,8 +14,8 @@ namespace :dev do
         puts %x(rails db:migrate)
       end
 
-      puts %x(rails dev:add_mining_types)
       puts %x(rails dev:add_coins)
+      puts %x(rails dev:add_mining_types)
 
     else
       puts "Você não está em ambiente de desenvolvimento"
@@ -28,17 +28,20 @@ namespace :dev do
         {
           description: 'Bitcoin',
           acronym: 'BTC',
-          url_image: 'https://logosmarcas.net/wp-content/uploads/2020/08/Bitcoin-Logo.png'
+          url_image: 'https://logosmarcas.net/wp-content/uploads/2020/08/Bitcoin-Logo.png',
+          mining_type: MiningType.find_by(acronym: 'PoW')
         },
         {
           description: 'Etherum',
           acronym: 'ETH',
-          url_image: 'https://static.coinpaprika.com/coin/eth-ethereum/logo.png?rev=112353'
+          url_image: 'https://static.coinpaprika.com/coin/eth-ethereum/logo.png?rev=112353',
+          mining_type: MiningType.all.sample
         },
         {
           description: 'Dash',
           acronym: 'DHS',
-          url_image: 'https://s2.coinmarketcap.com/static/img/coins/200x200/131.png'
+          url_image: 'https://s2.coinmarketcap.com/static/img/coins/200x200/131.png',
+          mining_type: MiningType.all.sample
         }
       ]
 
@@ -52,15 +55,15 @@ namespace :dev do
     show_spinner("Creating Mining Types...") do
       mining_types = [
         {
-          name: 'Proof of Work',
+          description: 'Proof of Work',
           acronym: 'PoW',
         },
         {
-          name: 'Proof of Stake',
+          description: 'Proof of Stake',
           acronym: 'PoS',
         },
         {
-          name: 'Proof of capacity',
+          description: 'Proof of capacity',
           acronym: 'PoC',
         }
       ]
