@@ -1,10 +1,20 @@
+<p>
+  <%= link_to 'Portugês', '/?locale=pt-BR' %>
+</p>
+<p>
+  <%= link_to 'Inglês', '/?locale=en' %>
+</p>
 <h1>Seja Bem-Vindo!</h1>
-<p>A lingua usada no sistema: <strong> <%= locale %> </strong> </p>
+
+<h3> <%= cookies[:curso] %> </h3>
+
+<p>A lingua usada no sistema: <strong> <%= I18n.t("actual_locale") %> </strong> </p>
 <p>Data: <%= I18n.l(Date.today) %> </p>
 
 <p> <%= I18n.t('hello') %> </p>
 
 <p> <%= app_name %> </p>
+
 
 
 <p>Você está em ambiente de: <%= env_rails %> </p>
