@@ -7,11 +7,16 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <h1>Cabeçalho - <%= params[:controller] %> </h1>
-    <%= yield %>
+  <div class="container">
+    <div>
+      <h1 class="text-primary">Cabeçalho - <%= params[:controller] %> </h1>
+      <%= yield %>
+    </div>
+  </div>
   </body>
 </html>

@@ -19,6 +19,10 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
 #tty spinner https://ttytoolkit.org/
 gem 'tty-spinner'
+#use cofee to support assets pipeline
+gem 'coffee-rails'
+gem 'uglifier', '>= 1.3.0'
+gem 'bootstrap', '>= 5.1.0'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
