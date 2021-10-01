@@ -19,9 +19,17 @@
 
 <hr/>
 
+<p>If project already have Database and dependencies you online run rails s and test app. </p>
+
 <strong>Use DEV TASK for install project</strong>
 ``` 
   rails dev:setup  
+```
+
+
+<strong>Run APP</strong>
+``` 
+  rails server  
 ```
 
 OR.....
@@ -45,6 +53,11 @@ OR.....
 <strong> Run Seeds </strong>
 ``` 
   rails db:seed
+```
+
+<strong>Run APP</strong>
+``` 
+  rails server  
 ```
 
 <hr/>
