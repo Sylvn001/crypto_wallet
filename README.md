@@ -13,8 +13,8 @@
 <p>
   Language Support:
   <ul>
-    <li>English/li>
-    <li>Portuguese/li>
+    <li>English</li>
+    <li>Portuguese</li>
   </ul>
 </p>
 
