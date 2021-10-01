@@ -26,6 +26,10 @@
   rails dev:setup  
 ```
 
+<strong>Install JS dependencies</strong>
+``` 
+  yarn install
+```
 
 <strong>Run APP</strong>
 ``` 
@@ -39,6 +43,11 @@ OR.....
 ``` 
   bundle install
   yarn install
+```
+
+<strong> Drop Database (SQLITE) </strong>
+``` 
+  rails db:drop
 ```
 
 <strong> Create Database (SQLITE) </strong>
