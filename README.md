@@ -24,7 +24,6 @@
   rails dev:setup  
 ```
 
-<br/>
 OR.....
 <br/>
 
