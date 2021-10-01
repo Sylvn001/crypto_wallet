@@ -21,12 +21,14 @@
 <hr/>
 
 <strong>Use DEV TASK for install project</strong>
-```
+``` 
   rails dev:setup  
 ```
+
 <br/>
 OR.....
 <br/>
+
 <strong> Install depencencies </strong>
 ``` 
   bundle install
@@ -35,7 +37,6 @@ OR.....
 <strong> Create Database (SQLITE) </strong>
 ``` 
   rails db:create
-
 ```
 
 <strong> Run migrations </strong>
