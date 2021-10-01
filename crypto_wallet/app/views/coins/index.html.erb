@@ -1,35 +1,32 @@
-<p id="notice"><%= notice %></p>
+<section id="coins" class="container bg-light rounded p-4 mt-4">
+  <h1 class="text-dark mt-2"><%= I18n.t("coins") %></h1>
+  <strong class="text-primary mb-2">Data: <%= br_date(Date.today) %> </strong>
 
-<h1>Coins</h1>
-
-
-Data: <%= br_date(Date.today) %>
-
-
-<table>
-  <thead>
-    <tr>
-      <th><%= Coin.human_attribute_name(:description) %></th>
-      <th><%= Coin.human_attribute_name(:acronym) %></th>
-      <th><%= Coin.human_attribute_name(:acronym) %></th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @coins.each do |coin| %>
+  <table class="table table-striped">
+    <thead class="thead-dark ">
       <tr>
-        <td><%= coin.description %></td>
-        <td><%= coin.acronym %></td>
-        <td><img src="<%= coin.url_image%>" width="50px" height="50px"> </td>
-        <td><%= link_to I18n.t('links.show'), coin %></td>
-        <td><%= link_to I18n.t('links.edit'), edit_coin_path(coin) %></td>
-        <td><%= link_to I18n.t('links.delete'), coin, method: :delete, data: { confirm: I18n.t('confirm') } %></td>
+        <th scope="col"><%= Coin.human_attribute_name(:description) %></th>
+        <th scope="col"><%= Coin.human_attribute_name(:acronym) %></th>
+        <th scope="col"><%= Coin.human_attribute_name(:acronym) %></th>
+        <th scope="col" colspan="3"></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
 
-<br>
+    <tbody class="table-light">
+      <% @coins.each do |coin| %>
+        <tr>
+          <td><%= coin.description %></td>
+          <td><%= coin.acronym %></td>
+          <td><img src="<%= coin.url_image%>" width="50px" height="50px"> </td>
+          <td><%= link_to I18n.t('links.show'), coin %></td>
+          <td><%= link_to I18n.t('links.edit'), edit_coin_path(coin) %></td>
+          <td><%= link_to I18n.t('links.delete'), coin, method: :delete, data: { confirm: I18n.t('confirm') } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
 
-<%= link_to 'New Coin', new_coin_path %>
+  <%= link_to I18n.t("new_coin"), new_coin_path, class: "btn btn-primary" %>
+
+</section>
+

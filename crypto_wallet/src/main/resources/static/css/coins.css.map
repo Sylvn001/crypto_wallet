@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAIA,AAAA,MAAM,CAAA;EACJ,gBAAgB,EAAE,0BAA0B;CAC7C",
     "sources": [
         "../../../../../app/assets/stylesheets/coins.scss"
     ],

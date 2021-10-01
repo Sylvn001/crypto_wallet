@@ -1,27 +1,35 @@
-<%= form_with(model: mining_type) do |form| %>
-  <% if mining_type.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(mining_type.errors.count, "error") %> prohibited this mining_type from being saved:</h2>
-
-      <ul>
-        <% mining_type.errors.each do |error| %>
-          <li><%= error.full_message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_field :description %>
+<section class="container card p-4 mt-4">
+  <div class="card-header">
+    <h1 class="card-title text-secondary "><%= I18n.t("mining") %> </h1>
   </div>
+  <div class="card-body bg-">
+    <%= form_with(model: mining_type) do |form| %>
+      <% if mining_type.errors.any? %>
+        <div id="error_explanation bg-danger p-2">
+          <h2 class="text-light"><%= pluralize(mining_type.errors.count, "error") %> prohibited this mining_type from being saved:</h2>
 
-  <div class="field">
-    <%= form.label :acronym %>
-    <%= form.text_field :acronym %>
-  </div>
+          <ul>
+            <% mining_type.errors.each do |error| %>
+              <li class="class="text-light""><%= error.full_message %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
 
-  <div class="actions">
-    <%= form.submit %>
-  </div>
-<% end %>
+      <div class="input-group col-6 mb-3">
+        <%= form.label :description, class: "mr-2" %>
+        <%= form.text_field :description, class: "form-control" %>
+      </div>
+
+      <div class="input-group col-6 mb-3">
+        <%= form.label :acronym, class: "mr-2" %>
+        <%= form.text_field :acronym, class: "form-control" %>
+      </div>
+
+      <div class="actions">
+        <%= form.submit class: "btn btn-primary" %>
+        <%= link_to 'Back', mining_types_path, class: "btn btn-secondary" %>
+      </div>
+    <% end %>
+  <div>
+</section>

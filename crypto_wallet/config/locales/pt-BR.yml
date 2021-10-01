@@ -1,8 +1,17 @@
 pt-BR:
   actual_locale: "Portugûes do Brasil"
-  hello: "Olá mundo"
+  welcome: "Seja bem vindo ao Crypto Wallet"
+  website: "Seu website para registrar criptomoedas, tipos de mineração e muito mais!!"
+  start: "Comece Agora"
+  about: "Sobre Nós"
+  coins: "Moedas"
+  mining: "Mineiração"
+  new_coin: "Nova Moeda"
+  nothing: "Nenhuma..."
+  new_mining_type: "Novo Tipo de Mineração"
   links:
     edit: "Editar"
     show: "Exibir"
     delete: "Apagar"
+    back: "Voltar"
   confirm: "Você tem certeza?"
