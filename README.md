@@ -6,7 +6,7 @@
 </p>
 
 <h3>PROJECT: </h3>
-![image](https://user-images.githubusercontent.com/50564121/135555073-1376d5f6-8609-4314-a84a-3f2d50190224.png)
+  <img src="https://user-images.githubusercontent.com/50564121/135555073-1376d5f6-8609-4314-a84a-3f2d50190224.png"/>
 <hr/>
 
 <p>
