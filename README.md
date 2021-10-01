@@ -38,6 +38,7 @@ OR.....
 <strong> Install depencencies </strong>
 ``` 
   bundle install
+  yarn install
 ```
 
 <strong> Create Database (SQLITE) </strong>
