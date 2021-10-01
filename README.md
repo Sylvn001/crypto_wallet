@@ -39,7 +39,7 @@
 OR.....
 <br/>
 
-<strong> Install depencencies </strong>
+<strong> Install Manualy </strong>
 ``` 
   bundle install
   yarn install
